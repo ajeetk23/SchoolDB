@@ -1,0 +1,105 @@
+Inserts are sorted by table for convenience. Just remove the title above the inserts.
+Assmuming that the institution is from a third-world country, I'll use the Philippines as an example.
+
+		Course Catalog:
+INSERT INTO COURSE_CATALOG VALUES (1, 10001, 54001, 30627, 30005, 'Math Gr. 7', 'Math for 7th grade.');
+INSERT INTO COURSE_CATALOG VALUES (2, 10002, 54001, 30628, 30006, 'Science Gr. 7', 'Science for 7th grade.');
+INSERT INTO COURSE_CATALOG VALUES (3, 10003, 54001, 30629, 30007, 'History Gr. 7', 'History for 7th grade.');
+INSERT INTO COURSE_CATALOG VALUES (4, 10004, 54002, 30630, 30005, 'Math Gr. 8', 'Math for 8th grade.');
+INSERT INTO COURSE_CATALOG VALUES (5, 10005, 54002, 30631, 30006, 'Science Gr. 8', 'Science for 8th grade.');
+INSERT INTO COURSE_CATALOG VALUES (6, 10006, 54002, 30632, 30007, 'History Gr. 8', 'History for 8th grade.');
+
+		Course Requirements
+INSERT INTO COURSE_REQUIREMENTS VALUES (54001, 'Gr. 6', 'Student need to have passed grade 6.');
+INSERT INTO COURSE_REQUIREMENTS VALUES (54002, 'Gr. 7', 'Student need to have passed grade 7.');
+INSERT INTO COURSE_REQUIREMENTS VALUES (54003, 'Gr. 8', 'Student need to have passed grade 8.');
+INSERT INTO COURSE_REQUIREMENTS VALUES (54004, 'Gr. 9', 'Student need to have passed grade 9.');
+INSERT INTO COURSE_REQUIREMENTS VALUES (54005, 'Gr. 10', 'Student need to have passed grade 10.');
+INSERT INTO COURSE_REQUIREMENTS VALUES (54006, 'Gr. 11', 'Student need to have passed grade 11.');
+
+		Student Grade Year
+INSERT INTO STUDENT_GRADE_YEAR VALUES (68391, 7);
+INSERT INTO STUDENT_GRADE_YEAR VALUES (68392, 8);
+INSERT INTO STUDENT_GRADE_YEAR VALUES (68393, 7);
+INSERT INTO STUDENT_GRADE_YEAR VALUES (68394, 6);
+INSERT INTO STUDENT_GRADE_YEAR VALUES (68395, 9);
+INSERT INTO STUDENT_GRADE_YEAR VALUES (68396, 10);
+
+		Student attendance
+INSERT INTO STUDENT_ATTENDANCE VALUES (68391, '2022-11-28', 98660);
+INSERT INTO STUDENT_ATTENDANCE VALUES (68392, '2022-11-28', 98661);
+INSERT INTO STUDENT_ATTENDANCE VALUES (68393, '2022-10-28', 98661);
+INSERT INTO STUDENT_ATTENDANCE VALUES (68394, '2022-10-04', 98662);
+INSERT INTO STUDENT_ATTENDANCE VALUES (68395, '2022-11-01', 98660);
+
+		Absence types
+INSERT INTO ABSENCE_TYPES VALUES (98660, 'Medical Reason', 'Inability to attend school due to illnesses or injuries.');
+INSERT INTO ABSENCE_TYPES VALUES (98661, 'Permitted', 'Permitted absent due to personal reasons disclosed to homeroom teacher.');
+INSERT INTO ABSENCE_TYPES VALUES (98662, 'Unknown', 'No reason recorded for student absence.');
+
+		Staff role
+INSERT INTO STAFF_ROLE VALUES (83745, '7th grade Math Teacher', 'Teacher for 7th grade math');
+INSERT INTO STAFF_ROLE VALUES (83746, '7th grade Science Teacher', 'Teacher for 7th grade math');
+INSERT INTO STAFF_ROLE VALUES (83747, '7th grade History Teacher', 'Teacher for 7th grade math');
+INSERT INTO STAFF_ROLE VALUES (83748, '8th grade Math Teacher', 'Teacher for 8th grade math');
+INSERT INTO STAFF_ROLE VALUES (83749, '8th grade Science Teacher', 'Teacher for 8th grade math');
+INSERT INTO STAFF_ROLE VALUES (83750, '8th grade History Teacher', 'Teacher for 8th grade math');
+INSERT INTO STAFF_ROLE VALUES (83751, 'Headmaster', 'Headmaster');
+INSERT INTO STAFF_ROLE VALUES (83752, 'Janitor', 'Daytime janitor');
+INSERT INTO STAFF_ROLE VALUES (83753, 'Advisor', 'advisor for 8th grade students with last names from A-M');
+
+		Location
+INSERT INTO LOCATION VALUES (30627, 'Room D-01', 35);
+INSERT INTO LOCATION VALUES (30628, 'Room D-07', 35);
+INSERT INTO LOCATION VALUES (30629, 'Room C-03', 35);
+INSERT INTO LOCATION VALUES (30630, 'Room B-13', 35);
+INSERT INTO LOCATION VALUES (30631, 'Room B-12', 35);
+INSERT INTO LOCATION VALUES (30632, 'Room A-05', 35);
+
+		Staff information
+INSERT INTO STAFF_INFORMATION VALUES (10001, 83745, 'Damasco', 'Hilda', 97767896, 14034.00, '7532091327', '1972-04-19', '1999-08-09');
+INSERT INTO STAFF_INFORMATION VALUES (10002, 83746, 'Somera', 'Purificacion', 48478917, 14234.83, '2515345195', '1977-07-09', '2005-08-08') ;
+INSERT INTO STAFF_INFORMATION VALUES (10003, 83747, 'Cabling', 'Richard', 97767899, 12345.43, '8462394698', '1980-02-17', '2007-07-23');
+INSERT INTO STAFF_INFORMATION VALUES (10004, 83748, 'Orias', 'Vince', 371277623, 14152.33, '6964713083', '1981-02-27', '2010-07-26');
+INSERT INTO STAFF_INFORMATION VALUES (10005, 83749, 'Aganon', 'Roger', 48427787, 15341.34, '9196822435', '1981-04-08', '2010-07-26');
+INSERT INTO STAFF_INFORMATION VALUES (10006, 83750, 'Agpaoa', 'Modesto', 72929014, 12474.22, '5185116591', '1982-11-04', '2012-01-02');
+
+		Staff address
+INSERT INTO STAFF_ADDRESS VALUES (10001, 3504, '7 Camarotis', 'Muntinlupa', 'Metro Manila', 'Philippines', 1771);
+INSERT INTO STAFF_ADDRESS VALUES (10002, 3505, '25 Molave Street', 'Makati', 'Metro Manila', 'Philippines', 1220);
+INSERT INTO STAFF_ADDRESS VALUES (10003, 3506, '17 N. Domingo Street', 'Quezon City', 'Metro Manila', 'Philippines', 1100);
+INSERT INTO STAFF_ADDRESS VALUES (10004, 3507, '11 Furman', 'Biñan', 'Laguna', 'Philippines', 4024);
+INSERT INTO STAFF_ADDRESS VALUES (10005, 3508, '14 Saratoga', 'Cainta', 'Rizal', 'Philippines', 1900);
+INSERT INTO STAFF_ADDRESS VALUES (10006, 3509, '29 Timberland Avenue', 'Antipolo', 'Rizal', 'Philippines', 1850);
+
+		Department
+INSERT INTO DEPARTMENT VALUES (30005, 'Mathematics', 'Learning math fundamental and calculations');
+INSERT INTO DEPARTMENT VALUES (30006, 'Science', 'Learning biology, physcis, chemistry, etc.');
+INSERT INTO DEPARTMENT VALUES (30007, 'History', 'Learning history of the country and world');
+INSERT INTO DEPARTMENT VALUES (30008, 'English Literature', 'Reading books and analyzing them');
+INSERT INTO DEPARTMENT VALUES (30009, 'Art', 'Learning how to create art');
+INSERT INTO DEPARTMENT VALUES (30010, 'Music', 'Learning how to make music');
+
+		Student Course
+INSERT INTO STUDENT_COURSE VALUES (68391, 1, 1, 4.00);
+INSERT INTO STUDENT_COURSE VALUES (68392, 2, 1, 3.98);
+INSERT INTO STUDENT_COURSE VALUES (68393, 3, 1, 3.20);
+INSERT INTO STUDENT_COURSE VALUES (68394, 1, 2, 3.12);
+INSERT INTO STUDENT_COURSE VALUES (68395, 2, 2, 2.90);
+INSERT INTO STUDENT_COURSE VALUES (68396, 3, 2, 3.54);
+
+		Student Information
+INSERT INTO STUDENT_INFORMATION VALUES (68391, 'Cabling', 'John', '2006-10-03', '2020-08-19', 'M');
+INSERT INTO STUDENT_INFORMATION VALUES (68392, 'Garcia', 'Rick', '2007-08-12', '2021-08-21', 'M');
+INSERT INTO STUDENT_INFORMATION VALUES (68393, 'Ramos', 'April', '2006-04-03', '2019-08-18', 'F');
+INSERT INTO STUDENT_INFORMATION VALUES (68394, 'Ramos', 'Alesa', '2008-02-25', '2021-08-19', 'F');
+INSERT INTO STUDENT_INFORMATION VALUES (68395, 'Bautista', 'Jerry', '2006-07-15', '2019-08-19', 'M');
+INSERT INTO STUDENT_INFORMATION VALUES (68396, 'Velasco', 'Sylvia', '2008-05-19', '2022-02-19', 'F');
+
+		Student Address
+INSERT INTO STUDENT_ADDRESS VALUES (68391, 4504, '17 N. Domingo Street', 'Quezon City', 'Metro Manila', 'Philippines', 1100);
+INSERT INTO STUDENT_ADDRESS VALUES (68392, 4505, '21 Juan Luna Street', 'San Juan', 'Metro Manila', 'Philippines', 1100);
+INSERT INTO STUDENT_ADDRESS VALUES (68393, 4506, '35 Teodora Alonzo Street', 'Manila', 'Metro Manila', 'Philippines', 1100);
+INSERT INTO STUDENT_ADDRESS VALUES (68394, 4507, '51 Antonio Villegas Street', 'Manila', 'Metro Manila', 'Philippines', 1100);
+INSERT INTO STUDENT_ADDRESS VALUES (68395, 4508, '29 N. Domingo Street', 'Quezon City', 'Metro Manila', 'Philippines', 1100);
+INSERT INTO STUDENT_ADDRESS VALUES (68396, 4509, '47 Antonio Villegas Street', 'Manila', 'Metro Manila', 'Philippines', 1100);
